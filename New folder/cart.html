@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | FEARLESS</title>
+  <meta name="description" content="Complete your purchase with FEARLESS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">FEARLESS.</a>
+    <div class="nav-links">
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#collections">Collections</a>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1 class="title">Checkout</h1>
+    <p class="subtitle">Review your items and complete your order.</p>
+  </header>
+
+  <main class="cart-container">
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items injected here -->
+    </div>
+    
+    <div class="cart-summary">
+      <h3 class="summary-title">Order Summary</h3>
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="subtotal">$0.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span id="shipping">$0.00</span>
+      </div>
+      <div class="summary-total">
+        <span>Total</span>
+        <span id="total">$0.00</span>
+      </div>
+
+      <p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.85rem; text-align: center;">
+        <i class="fa-brands fa-whatsapp" style="color: #25D366; margin-right: 6px;"></i>
+        Orders are sent directly to us on WhatsApp for confirmation.
+      </p>
+
+      <button id="checkoutBtn" class="btn checkout-btn" onclick="processCheckout()">
+        <i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i>Order via WhatsApp
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 FEARLESS Clothing. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

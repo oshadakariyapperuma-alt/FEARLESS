@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FEARLESS | Clothing Brand</title>
+  <meta name="description" content="FEARLESS Premium Streetwear. Dare to be different.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">FEARLESS.</a>
+    <div class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img src="assets/hero.png" alt="Fearless Streetwear" class="hero-img">
+    <div class="hero-content">
+      <h1 class="hero-title">EMBRACE<br>THE BOLD</h1>
+      <p class="subtitle" style="margin-bottom: 2rem; color: #fff;">Premium Streetwear Collection Vol. 1</p>
+      <a href="#shop" class="btn">Explore Collection</a>
+    </div>
+  </header>
+
+  <section id="shop" class="products">
+    <div class="section-header">
+      <h2 class="title">Shop</h2>
+      <p class="subtitle">Designed for those who dare.</p>
+      <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <button class="btn btn-outline" style="padding: 0.5rem 1.5rem;" onclick="filterCollection('all')">All</button>
+        <button class="btn btn-outline" style="padding: 0.5rem 1.5rem;" onclick="filterCollection('mens')">Mens</button>
+        <button class="btn btn-outline" style="padding: 0.5rem 1.5rem;" onclick="filterCollection('womens')">Womens</button>
+        <button class="btn btn-outline" style="padding: 0.5rem 1.5rem;" onclick="filterCollection('accessories')">Accessories</button>
+      </div>
+    </div>
+    
+    <div class="product-grid" id="productGrid">
+      <!-- Products will be dynamically injected here by script.js -->
+    </div>
+  </section>
+
+  <section id="collections" class="info-section">
+    <div class="section-header">
+      <h2 class="title">Collections</h2>
+      <p class="subtitle">Explore our exclusive lines.</p>
+    </div>
+    <div class="banner-grid">
+      <div class="banner banner-mens" onclick="filterCollection('mens')"><h3>Menswear</h3></div>
+      <div class="banner banner-womens" onclick="filterCollection('womens')"><h3>Womenswear</h3></div>
+      <div class="banner banner-acc" onclick="filterCollection('accessories')"><h3>Accessories</h3></div>
+    </div>
+  </section>
+
+  <section id="about" class="info-section alternate-bg">
+    <div class="section-header">
+      <h2 class="title">About Us</h2>
+      <p class="subtitle">The FEARLESS Ethos</p>
+    </div>
+    <div class="text-container">
+      <p>FEARLESS isn't just a clothing brand. It's a statement. Born in the streets, designed for the bold. We believe in high-quality streetwear that empowers you to express your true self without apologies.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="info-section">
+    <div class="section-header">
+      <h2 class="title">Contact</h2>
+      <p class="subtitle">Get in touch with us.</p>
+    </div>
+    <div class="contact-form-container">
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="contactName" placeholder="Your Name" required>
+        <input type="email" id="contactEmail" placeholder="Your Email" required>
+        <textarea id="contactMessage" placeholder="Message" rows="4" required></textarea>
+        <button type="button" class="btn" onclick="sendEmail()">Send Message</button>
+        <p class="subtitle">+977684277055 </p>
+
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">FEARLESS.</div>
+      <div class="social-links">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </div>
+    <p style="margin-top: 2rem;">&copy; 2026 FEARLESS Clothing. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

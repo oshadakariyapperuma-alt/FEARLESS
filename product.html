@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | FEARLESS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">FEARLESS.</a>
+    <div class="nav-links">
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#collections">Collections</a>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <main style="padding-top: 100px; min-height: 80vh;">
+    <div id="productDetail" class="product-detail-container">
+      <div class="product-image-section">
+        <img id="pdImage" src="" alt="Product Image">
+      </div>
+      <div class="product-info-section">
+        <h1 id="pdName" class="title" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Loading...</h1>
+        <p id="pdPrice" class="product-price" style="font-size: 1.5rem; color: var(--text-color); margin-bottom: 2rem;">$0.00</p>
+        
+        <p style="color: var(--text-muted); margin-bottom: 2rem; line-height: 1.8;">
+          Premium quality streetwear designed for maximum comfort and style. Made from 100% heavyweight cotton. Features a relaxed, oversized fit. Wash cold, dry low.
+        </p>
+
+        <div class="size-selection">
+          <p style="text-transform: uppercase; font-weight: bold; margin-bottom: 1rem; letter-spacing: 1px;">Select Size</p>
+          <div class="size-options">
+            <button class="size-btn" data-size="S">S</button>
+            <button class="size-btn" data-size="M">M</button>
+            <button class="size-btn" data-size="L">L</button>
+            <button class="size-btn" data-size="XL">XL</button>
+          </div>
+        </div>
+
+        <button class="btn" style="width: 100%; margin-top: 2rem; padding: 1.2rem;" onclick="addToCartWithSize()">ADD TO CART</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">FEARLESS.</div>
+      <div class="social-links">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+      </div>
+    </div>
+    <p style="margin-top: 2rem; text-align: center; color: var(--text-muted);">&copy; 2026 FEARLESS Clothing. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
